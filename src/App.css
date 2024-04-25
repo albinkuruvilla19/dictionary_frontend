@@ -1,38 +1,116 @@
-.App {
+/* Overall Styling */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('bg.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+  background-size: cover; /* This property ensures that the background image covers the entire viewport */
+  background-repeat: no-repeat; /* This property prevents the background image from repeating */
+  background-position: center; /* This property centers the background image */
+
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Border for Firefox */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}
+
+.container2 {
+  max-width: 800px;
+  margin:100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Border for Firefox */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.word-of-the-day {
+  display: inline-block;
+  text-align: center; /* Align text within the container */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.word-of-the-day h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.word-of-the-day h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.word-of-the-day p {
+  font-size: 16px;
+  margin: 0;
+  color: #666;
+}
+/* Search Container */
+.search-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Input Field */
+.input-field {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Search Button */
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #222;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Definitions Container */
+.definitions-container {
+  padding: 10px;
+}
+
+/* Definition List */
+.definition-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Definition Item */
+.definition-item {
+  margin-bottom: 10px;
+  font-style: italic;
 }
